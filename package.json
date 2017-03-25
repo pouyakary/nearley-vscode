@@ -1,9 +1,9 @@
 {
-	"name": "nearley",
-	"displayName": "Nearley",
-	"description": "Nearley support for Visual Studio Code",
-	"version": "0.0.0",
-	"publisher": "karyfoundation",
+	"name": 		"nearley",
+	"displayName": 	"Nearley",
+	"description": 	"Nearley support for Visual Studio Code",
+	"version":		"0.0.0",
+	"publisher": 	"karyfoundation",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
@@ -16,19 +16,18 @@
 	"main": "./out/src/extension",
 	"contributes": {
 		"languages": [{
-			"id": "nearley",
-			"extensions": [ ".ne" ],
-			"aliases": [ "Nearley", "nearley" ],
-			"filenames": [ ".ne" ]
+			"id": 			"nearley",
+			"extensions": 	[ ".ne" ],
+			"aliases": 		[ "Nearley", "nearley" ],
+			"filenames": 	[ ".ne" ]
 		}],
 		"grammars": [{
-			"language": "nearley",
-			"scopeName": "source.nearley",
-			"path": "./syntaxes/nearley.tmLanguage.json"
+			"language": 	"nearley",
+			"scopeName": 	"source.nearley",
+			"path": 		"./syntaxes/nearley.tmLanguage.json"
 		}]
 	},
 	"devDependencies": {
-		"typescript": "^1.6.2",
 		"vscode": "0.10.x"
 	}
 }
