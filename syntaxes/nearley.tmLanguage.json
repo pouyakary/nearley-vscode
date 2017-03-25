@@ -4,10 +4,26 @@
     ],
     "name": "Nearley",
     "patterns": [{
-        "include": "#expression"
+        "include": "#javascript"
     }],
     "repository": {
-        
+        "javascript": {
+            "begin": "\\{@",
+            "beginCaptures": {
+				"0": {
+                    "name": "brace.begin.nearley"
+                }
+			},
+            "patterns": [{
+               "include": "source.js"
+            }],
+            "end": "@\\}",
+            "endCaptures": {
+                "0": {
+					"name": "brace.end.nearley"
+				}
+            }
+        }
     },
     "scopeName": "source.nearley"
 }
