@@ -1,0 +1,13 @@
+{
+    "fileTypes": [
+        "ne"
+    ],
+    "name": "Nearly.js",
+    "patterns": [{
+        "include": "#expression"
+    }],
+    "repository": {
+        
+    },
+    "scopeName": "source.nearlyjs"
+}
