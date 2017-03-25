@@ -3,27 +3,99 @@
         "ne"
     ],
     "name": "Nearley",
-    "patterns": [{
-        "include": "#javascript"
-    }],
-    "repository": {
-        "javascript": {
-            "begin": "\\{@",
-            "beginCaptures": {
-				"0": {
-                    "name": "brace.begin.nearley"
-                }
-			},
-            "patterns": [{
-               "include": "source.js"
-            }],
-            "end": "@\\}",
-            "endCaptures": {
-                "0": {
-					"name": "brace.end.nearley"
-				}
-            }
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#inlinejs"
+        },
+        {
+            "include": "#identifier"
+        },
+        {
+            "include": "#regex"
+        },
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#imports"
+        },
+        {
+            "include": "#string"
+        },
+        {
+            "include": "#operator"
         }
+    ],
+    "repository": {
+        "imports": {
+            "match": "@(?:builtin|import)\\b",
+            "name": "keyword.other.nearly"
+        },
+        "keywords": {
+            "match": "\\b(null)\\b",
+            "name": "constant.language.nearly"
+        },
+        "operator": {
+            "match": "\\:(?:[ \\t])*([\\*\\+\\?])",
+            "captures": {
+                "1": {
+                    "name": "keyword.operator.nearly"
+                }
+            } 
+        },
+        "comment": {
+			"match": "\\#.*$\\n?",
+            "name": "comment.line.number-sign.nearly"
+        },
+        "identifier": {
+            "match": "\\b([0-9a-zA-Z\\$\\-_](?:[\\w\\$\\-_])*)\\b",
+            "name": "variable.other.property.nearly"
+        },
+        "inlinejs": {
+            "begin": "@?{%",
+            "end": "%}",
+            "name": "source.js.embedded.c",
+            "patterns": [
+                {
+                    "include": "source.js"
+                }
+            ]
+        },
+        "regex": {
+            "name": "string.regexp.nearley",
+            "begin": "\\[",
+            "end":  "\\]"
+        },
+        "string": {
+			"name": "string.double.template.nearley",
+			"begin": "([_$[:alpha:]][_$[:alnum:]]*)?(\")",
+			"beginCaptures": {
+				"1": {
+					"name": "entity.name.function.tagged-template.nearley"
+				},
+				"2": {
+					"name": "punctuation.definition.string.double.begin.nearley"
+				}
+			},
+			"end": "\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.double.end.nearley"
+				}
+			},
+			"patterns": [
+				{
+					"include": "#string-character-escape"
+				}
+			]
+		},
+		"string-character-escape": {
+			"name": "constant.character.escape.nearley",
+			"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.|#)"
+		}
     },
     "scopeName": "source.nearley"
 }
