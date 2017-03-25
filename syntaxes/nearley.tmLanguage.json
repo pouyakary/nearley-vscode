@@ -2,12 +2,12 @@
     "fileTypes": [
         "ne"
     ],
-    "name": "Nearly.js",
+    "name": "Nearley",
     "patterns": [{
         "include": "#expression"
     }],
     "repository": {
         
     },
-    "scopeName": "source.nearlyjs"
+    "scopeName": "source.nearley"
 }

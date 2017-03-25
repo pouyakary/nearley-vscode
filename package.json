@@ -1,7 +1,7 @@
 {
-	"name": "nearly",
-	"displayName": "Nearlyjs",
-	"description": "Nearly.js support for Visual Studio Code",
+	"name": "nearley",
+	"displayName": "Nearley",
+	"description": "Nearley support for Visual Studio Code",
 	"version": "0.0.0",
 	"publisher": "karyfoundation",
 	"engines": {
@@ -11,20 +11,20 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onLanguage:nearlyjs"
+		"onLanguage:nearley"
 	],
 	"main": "./out/src/extension",
 	"contributes": {
 		"languages": [{
-			"id": "nearlyjs",
+			"id": "nearley",
 			"extensions": [ ".ne" ],
-			"aliases": [ "Nearlyjs", "nearlyjs" ],
+			"aliases": [ "Nearley", "nearley" ],
 			"filenames": [ ".ne" ]
 		}],
 		"grammars": [{
-			"language": "nearlyjs",
-			"scopeName": "source.nearlyjs",
-			"path": "./syntaxes/nearlyjs.tmLanguage.json"
+			"language": "nearley",
+			"scopeName": "source.nearley",
+			"path": "./syntaxes/nearley.tmLanguage.json"
 		}]
 	},
 	"devDependencies": {
