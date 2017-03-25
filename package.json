@@ -24,7 +24,10 @@
 		"grammars": [{
 			"language": 	"nearley",
 			"scopeName": 	"source.nearley",
-			"path": 		"./syntaxes/nearley.tmLanguage.json"
+			"path": 		"./syntaxes/nearley.tmLanguage.json",
+			"embeddedLanguages": {
+				"source.js": "javascript"
+			}
 		}]
 	},
 	"devDependencies": {
