@@ -32,27 +32,27 @@
     "repository": {
         "imports": {
             "match": "@(?:builtin|import)\\b",
-            "name": "keyword.other.nearly"
+            "name": "keyword.other.nearley"
         },
         "keywords": {
             "match": "\\b(null)\\b",
-            "name": "constant.language.nearly"
+            "name": "constant.language.nearley"
         },
         "operator": {
             "match": "\\:(?:[ \\t])*([\\*\\+\\?])",
             "captures": {
                 "1": {
-                    "name": "keyword.operator.nearly"
+                    "name": "keyword.operator.nearley"
                 }
             } 
         },
         "comment": {
 			"match": "\\#.*$\\n?",
-            "name": "comment.line.number-sign.nearly"
+            "name": "comment.line.number-sign.nearley"
         },
         "identifier": {
             "match": "\\b([0-9a-zA-Z\\$\\-_](?:[\\w\\$\\-_])*)\\b",
-            "name": "variable.other.property.nearly"
+            "name": "variable.other.property.nearley"
         },
         "inlinejs": {
             "begin": "@?{%",
