@@ -56,8 +56,14 @@
         },
         "inlinejs": {
             "begin": "@?{%",
+            "beginCaptures": {
+                "0": { "name": "begin.brace.nearley" }
+            },
             "end": "%}",
-            "name": "source.js.embedded.c",
+            "endCaptures": {
+                "0": { "name": "end.brace.nearley" }
+            },
+            "name": "source.js.embedded.nearley",
             "patterns": [
                 {
                     "include": "source.js"
