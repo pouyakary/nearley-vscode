@@ -27,6 +27,9 @@
         },
         {
             "include": "#operator"
+        },
+        {
+            "include": "#sign"
         }
     ],
     "repository": {
@@ -45,6 +48,10 @@
                     "name": "keyword.operator.nearley"
                 }
             } 
+        },
+        "sign": {
+            "match": "(?:\\-\\>|\\|)",
+            "name": "keyword.control.nearley"
         },
         "comment": {
 			"match": "\\#.*$\\n?",
