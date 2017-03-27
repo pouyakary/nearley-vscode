@@ -1,5 +1,6 @@
 
 # Nearley Language Support for Visual Studio Code
 
-![screen shot 2017-03-26 at 4 02 57 am](https://cloud.githubusercontent.com/assets/2157285/24326976/262c1f4c-11d9-11e7-84ae-b754a193fd4d.png)
+Syntax Highlighting Support for [Nearley Parser Generator Language](http://nearley.js.org). Supported by other Kary Foundation extensions [Comment](https://marketplace.visualstudio.com/items?itemName=karyfoundation.comment) and [Kary Foundation Theme](https://marketplace.visualstudio.com/items?itemName=karyfoundation.theme-karyfoundation-themes).
 
+![](https://cloud.githubusercontent.com/assets/2157285/24349074/2b0030ba-12f3-11e7-948e-72951a8bc35c.png)
