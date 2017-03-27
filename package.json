@@ -2,6 +2,7 @@
 	"name": 		"nearley",
 	"displayName": 	"Nearley",
 	"description": 	"Nearley support for Visual Studio Code",
+	"icon": 		"logo.png",
 	"version":		"0.0.0",
 	"publisher": 	"karyfoundation",
 	"engines": {
