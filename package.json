@@ -20,7 +20,8 @@
 			"id": 			"nearley",
 			"extensions": 	[ ".ne" ],
 			"aliases": 		[ "Nearley", "nearley" ],
-			"filenames": 	[ ".ne" ]
+			"filenames": 	[ ".ne" ],
+			"configuration": "./language-configuration.json"
 		}],
 		"grammars": [{
 			"language": 	"nearley",
