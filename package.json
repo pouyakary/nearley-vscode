@@ -1,10 +1,10 @@
 {
-	"name": 		"nearley",
-	"displayName": 	"Nearley",
-	"description": 	"Nearley support for Visual Studio Code",
-	"icon": 		"logo.png",
-	"version":		"1.0.0",
-	"publisher": 	"karyfoundation",
+	"name": "nearley",
+	"displayName": "Nearley",
+	"description": "Nearley support for Visual Studio Code",
+	"icon": "logo.png",
+	"version": "1.0.0",
+	"publisher": "karyfoundation",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
@@ -16,22 +16,38 @@
 	],
 	"main": "./out/src/extension",
 	"contributes": {
-		"languages": [{
-			"id": 			"nearley",
-			"extensions": 	[ ".ne" ],
-			"aliases": 		[ "Nearley", "nearley" ],
-			"filenames": 	[ ".ne" ]
-		}],
-		"grammars": [{
-			"language": 	"nearley",
-			"scopeName": 	"source.nearley",
-			"path": 		"./syntaxes/nearley.tmLanguage.json",
-			"embeddedLanguages": {
-				"source.js": "javascript"
+		"languages": [
+			{
+				"id": "nearley",
+				"extensions": [
+					".ne"
+				],
+				"aliases": [
+					"Nearley",
+					"nearley"
+				],
+				"filenames": [
+					".ne"
+				]
 			}
-		}]
+		],
+		"grammars": [
+			{
+				"language": "nearley",
+				"scopeName": "source.nearley",
+				"path": "./syntaxes/nearley.tmLanguage.json",
+				"embeddedLanguages": {
+					"source.js": "javascript"
+				}
+			}
+		]
 	},
 	"devDependencies": {
 		"vscode": "0.10.x"
+	},
+	"__metadata": {
+		"id": "bc8d58cc-a3f6-4b78-b6bc-b96297417431",
+		"publisherDisplayName": "Kary Foundation",
+		"publisherId": "00c37c0d-e370-4cc2-8ab3-3fa32a26514a"
 	}
 }
