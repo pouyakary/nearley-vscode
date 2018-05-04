@@ -3,7 +3,7 @@
 	"displayName": 	"Nearley",
 	"description": 	"Nearley support for Visual Studio Code",
 	"icon": 		"logo.png",
-	"version":		"1.0.2",
+	"version":		"1.0.3",
 	"publisher": 	"karyfoundation",
 	"engines": {
 		"vscode": "^0.10.1"
@@ -32,7 +32,7 @@
 			"scopeName": 	"source.nearley",
 			"path": 		"./syntaxes/nearley.tmLanguage.json",
 			"embeddedLanguages": {
-				"source.js": 	"javascript"
+				"source.ts": 	"typescript"
 			}
 		}]
 	},
