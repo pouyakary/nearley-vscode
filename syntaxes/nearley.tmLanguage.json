@@ -8,6 +8,9 @@
             "include": "#keywords"
         },
         {
+            "include": "#constants"
+        },
+        {
             "include": "#inlinejs"
         },
         {
@@ -33,11 +36,11 @@
         }
     ],
     "repository": {
-        "imports": {
-            "match": "@(?:builtin|import)\\b",
+        "keywords": {
+            "match": "@(?:builtin|import|preprocessor)\\b",
             "name": "keyword.other.nearley"
         },
-        "keywords": {
+        "constants": {
             "match": "\\b(null)\\b",
             "name": "constant.language.nearley"
         },
@@ -47,7 +50,7 @@
                 "1": {
                     "name": "keyword.operator.nearley"
                 }
-            } 
+            }
         },
         "sign": {
             "match": "(?:\\-\\>|\\|)",
@@ -73,7 +76,7 @@
             "name": "source.js.embedded.nearley",
             "patterns": [
                 {
-                    "include": "source.js"
+                    "include": "source.ts"
                 }
             ]
         },
