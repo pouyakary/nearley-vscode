@@ -37,7 +37,7 @@
     ],
     "repository": {
         "keywords": {
-            "match": "@(?:builtin|import|preprocessor)\\b",
+            "match": "@(?:builtin|include|lexer|preprocessor)\\b",
             "name": "keyword.other.nearley"
         },
         "constants": {
