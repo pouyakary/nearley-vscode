@@ -29,6 +29,9 @@
             "include": "#string"
         },
         {
+            "include": "#btstring"
+        },
+        {
             "include": "#operator"
         },
         {
@@ -37,7 +40,7 @@
     ],
     "repository": {
         "keywords": {
-            "match": "@(?:builtin|import|preprocessor)\\b",
+            "match": "@[\\w\\?\\+]+\\b",
             "name": "keyword.other.nearley"
         },
         "constants": {
@@ -53,7 +56,7 @@
             }
         },
         "sign": {
-            "match": "(?:\\-\\>|\\|)",
+            "match": "[=-]+\\>|\\|",
             "name": "keyword.control.nearley"
         },
         "comment": {
@@ -61,7 +64,7 @@
             "name": "comment.line.number-sign.nearley"
         },
         "identifier": {
-            "match": "\\b([0-9a-zA-Z\\$\\-_](?:[\\w\\$\\-_])*)\\b",
+            "match": "[\\w\\?\\+]+",
             "name": "variable.other.property.nearley"
         },
         "inlinejs": {
@@ -82,8 +85,7 @@
         },
         "regex": {
             "name": "string.regexp.nearley",
-            "begin": "\\[",
-            "end":  "\\]"
+            "match": "(?<![\\w\\?\\+])(?:\\.|\\[(?:\\\\.|[^\\\\\\n])+?\\])"
         },
         "string": {
 			"name": "string.double.template.nearley",
@@ -111,6 +113,11 @@
 		"string-character-escape": {
 			"name": "constant.character.escape.nearley",
 			"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.|#)"
+        },
+        "btstring": {
+            "name": "string.backtick.nearley",
+            "begin": "`",
+            "end": "`"
 		}
     },
     "scopeName": "source.nearley"
